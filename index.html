@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>YouTube</title>
+</head>
+<body>
+    <div class="content-container">
+        <!-- Start Header -->
+        <div class="header">
+            <div class="container">
+                <div class="logo">
+                    <div class="bars">
+                        <i class="fa fa-thin fa-bars" onclick="toggleLeftShortcuts()"></i>
+                    </div>
+                    <div class="logo-image">
+                        <a href="#"><img src="images/YouTube-FullLogo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="search">
+                    <input type="text" name="search" placeholder="Search">
+                    <div class="search-button">
+                        <i class="fa fa-thin fa-magnifying-glass"></i>
+                    </div>
+                    <div class="voice">
+                        <i class="fa fa-light fa-microphone"></i>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="video main-item">
+                        <i class=" fa fa-thin fa-video"></i>
+                        <ul class="sub-item">
+                            <li>
+                                <div class="icon">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </div>
+                                <div class="text">Upload Video</div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fa fa-thin fa-podcast"></i>
+                                </div>
+                                <div class="text">Go Live</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="apps main-item">
+                        <i class="fa fa-light fa-grip"></i>
+                        <ul class="sub-item">
+                            <li>
+                                <div class="icon">
+                                    <img src="images/YouTube-TV.png" alt="">
+                                </div>
+                                <div class="text">YouTube TV</div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <img src="images/YouTube-Music.png" alt="">
+                                </div>
+                                <div class="text">YouTube Musix</div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <img src="images/YouTube-Kids.png" alt="">
+                                </div>
+                                <div class="text">YouTube Kids</div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <img src="images/YouTube-logo.png" alt="">
+                                </div>
+                                <div class="text">YouTube for Artists</div>
+                            </li>                                
+                        </ul>
+                    </div>
+                    <div class="notification main-item">
+                        <i class="fa fa-light fa-bell"></i>
+                        <div class="sub-notificate">
+                            <div class="title">
+                                <span>Notifications</span>
+                                <i class="fa fa-light fa-gear"></i>
+                            </div>
+                            <div class="notificate-items">
+                                <div class="item">
+                                    <div class="channal-image">
+                                        <img src="images/notify1.jpg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <p>Elzero Web School is live: لقاء المتابعين رقم 003</p>
+                                        <span>10 days ago</span>
+                                    </div>
+                                    <div class="video-image">
+                                        <img src="images/notify11.jpg" alt="">
+                                    </div>
+                                    <div class="set-dots">
+                                        <i class="fa fa-thin fa-ellipsis-vertical"></i>
+                                        <div class="popup-notify">
+                                            <div class="hide">
+                                                <i class="fa fa-light fa-eye-slash"></i>
+                                                <p>Hide this notification</p>
+                                            </div>
+                                            <div class="turnoff-notify">
+                                                <i class="fa fa-light fa-bell-slash"></i>
+                                                <p>Turn off all from Elzero Web School</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="channal-image">
+                                        <img src="images/notify2.jpg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <p>Marble ASMR healing is live: Marble ASMR healing Truck wooden video</p>
+                                        <span>1 month ago</span>
+                                    </div>
+                                    <div class="video-image">
+                                        <img src="images/notify22.jpg" alt="">
+                                    </div>
+                                    <div class="set-dots">
+                                        <i class="fa fa-thin fa-ellipsis-vertical"></i>
+                                        <div class="popup-notify">
+                                            <div class="hide">
+                                                <i class="fa fa-light fa-eye-slash"></i>
+                                                <p>Hide this notification</p>
+                                            </div>
+                                            <div class="turnoff-notify">
+                                                <i class="fa fa-light fa-bell-slash"></i>
+                                                <p>Turn off all from Elzero Web School</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <div class="user-image">
+                            <img src="images/user.jpg" alt="">
+                        </div>
+                        <div class="user-sub-menu">
+                            <div class="title">
+                                <div class="user-image">
+                                    <img src="images/user.jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <h3>Hussien Elsharkawy</h3>
+                                    <a href="">Manage your Google Account</a>
+                                </div>
+                            </div>
+                            <ul class="account-setting">
+                                <li>
+                                    <i class="fa fa-light fa-tv"></i>
+                                    <span>Your Channel</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-light fa-tv"></i>
+                                    <span>Purchases and membership</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-light fa-tv"></i>
+                                    <span>YouTube Studio</span>
+                                </li>
+                                <li class="sub">
+                                    <i class="fa fa-light fa-tv"></i>
+                                    <span>Switch account</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-light fa-tv"></i>
+                                    <span>sign out</span>
+                                </li>
+                            </ul>
+                            <ul class="other-setting">
+                                <li class="sub">
+                                    <i class="fa fa-light fa-tv"></i>
+                                    <span>Appearance: Device theme</span>
+                                </li>
+                                <li class="sub">
+                                    <i class="fa fa-light fa-tv"></i>
+                                    <span>Language: English</span>
+                                </li>
+                                <li class="sub">
+                                    <i class="fa fa-light fa-tv"></i>
+                                    <span>Location: Egypt</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-light fa-tv"></i>
+                                    <span>Setting</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-light fa-tv"></i>
+                                    <span>Your data in YouTube</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-light fa-tv"></i>
+                                    <span>Help</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-light fa-tv"></i>
+                                    <span>Send feedback</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-light fa-tv"></i>
+                                    <span>Keyboard shortcuts</span>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="sub">Restricted Mode: Off</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Header -->
+        <!-- Start Page Body -->
+        <div class="page-content">
+        <!-- Start Left Shortcuts -->
+            <div class="left-shortcuts">
+                <div class="quick-items">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-house"></i>
+                            Home
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-wpexplorer"></i>
+                            Explore
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle-play"></i>
+                            Shorts
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-wpexplorer"></i>
+                            Subscriptions
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle-play"></i>
+                            Libirary
+                        </li>
+                    </ul>
+                </div>
+                <div class="detailed-items">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-house"></i>
+                            Home
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-wpexplorer"></i>
+                            Explore
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle-play"></i>
+                            Shorts
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-wpexplorer"></i>
+                            Subscriptions
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <i class="fa-regular fa-circle-play"></i>
+                            Libirary
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-wpexplorer"></i>
+                            History
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle-play"></i>
+                            Your videos
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-wpexplorer"></i>
+                            Watch later
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-wpexplorer"></i>
+                            liked video
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-square-caret-down"></i> 
+                            Show more
+                        </li>
+                    </ul>
+                    <ul class="subscribtion">
+                        <li>
+                            <div class="image">
+                                <img src="images/notify1.jpg" alt="">
+                            </div>
+                            Like Nastya
+                        </li>
+                        <li>
+                            <div class="image">
+                                <img src="images/notify1.jpg" alt="">
+                            </div>
+                            Like Nastya
+                        </li>
+                        <li>
+                            <div class="image">
+                                <img src="images/notify1.jpg" alt="">
+                            </div>
+                            Like Nastya
+                        </li>
+                        <li>
+                            <div class="image">
+                                <img src="images/notify1.jpg" alt="">
+                            </div>
+                            Like Nastya
+                        </li>
+                        <li>
+                            <div class="image">
+                                <img src="images/notify1.jpg" alt="">
+                            </div>
+                            Like Nastya
+                        </li>
+                        <li>
+                            <div class="image">
+                                <img src="images/notify1.jpg" alt="">
+                            </div>
+                            Like Nastya
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-square-caret-down"></i> 
+                            Show more
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End Left Shortcuts -->
+            <!-- Start Right Content -->
+            <div class="right-content">
+                <!-- Start Filter words -->
+                <div class="filter-words">
+                    <div>
+                        <span class="active">All</span>
+                    <span>CSS</span>
+                    <span>Computer programming</span>
+                    <span>Rockstar Games</span>
+                    <span>Performance cars</span>
+                    <span>Driving</span>
+                    <span>Children's Music</span>
+                    <span>Website</span>
+                    <span>All</span>
+                    <span>Conmputers</span>
+                    <span>Music</span>
+                    <span>LIve</span>
+                    <span>Rolling ball sculptures</span>
+                    <span>Trucks</span>
+                    <span>Comedy</span>
+                    <span>Mixes</span>
+                    <span>Recently uploaded</span>
+                    </div>
+                </div>
+                <!-- End Filter words -->
+                <!-- Start videos -->
+                <div class="videos">
+                    <div class="video-box">
+                        <div class="image">
+                            <img src="images/video-image.png" alt="">
+                            <span class="unavilable">
+                                <i class="fa fa-light fa-eye-slash"></i>
+                                Playback Unavailable
+                            </span>
+                            <span class="watch-later">
+                                <span>WATCH LATER</span>
+                                <i class="fa fa-solid fa-clock"></i>
+                            </span>
+                            <span class="add-queue">
+                                <span>ADD TO QUEUE</span>
+                                <i class="fa fa-solid fa-bars-staggered"></i>
+                            </span>
+                            <span class="duration">45:26</span>
+                        </div>
+                        <div class="text">
+                            <div class="channal-image">
+                                <img src="images/notify2.jpg" alt="">
+                            </div>
+                            <div class="video-info">
+                                <h4 class="video-name">WOW! Buster Plays With MAGIC! | GO Buster!| Bus Cartoons for Kids</h4>
+                                <span class="channal-name">Moonbug kids - Cartoons & Toys</span>
+                                <span class="views-upload">188K views - 1 year ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-box">
+                        <div class="image">
+                            <img src="images/video-image.png" alt="">
+                            <span class="unavilable">
+                                <i class="fa fa-light fa-eye-slash"></i>
+                                Playback Unavailable
+                            </span>
+                            <span class="watch-later">
+                                <span>WATCH LATER</span>
+                                <i class="fa fa-solid fa-clock"></i>
+                            </span>
+                            <span class="add-queue">
+                                <span>ADD TO QUEUE</span>
+                                <i class="fa fa-solid fa-bars-staggered"></i>
+                            </span>
+                            <span class="duration">45:26</span>
+                        </div>
+                        <div class="text">
+                            <div class="channal-image">
+                                <img src="images/notify2.jpg" alt="">
+                            </div>
+                            <div class="video-info">
+                                <h4 class="video-name">WOW! Buster Plays With MAGIC! | GO Buster!| Bus Cartoons for Kids</h4>
+                                <span class="channal-name">Moonbug kids - Cartoons & Toys</span>
+                                <span class="views-upload">188K views - 1 year ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-box">
+                        <div class="image">
+                            <img src="images/video-image.png" alt="">
+                            <span class="unavilable">
+                                <i class="fa fa-light fa-eye-slash"></i>
+                                Playback Unavailable
+                            </span>
+                            <span class="watch-later">
+                                <span>WATCH LATER</span>
+                                <i class="fa fa-solid fa-clock"></i>
+                            </span>
+                            <span class="add-queue">
+                                <span>ADD TO QUEUE</span>
+                                <i class="fa fa-solid fa-bars-staggered"></i>
+                            </span>
+                            <span class="duration">45:26</span>
+                        </div>
+                        <div class="text">
+                            <div class="channal-image">
+                                <img src="images/notify2.jpg" alt="">
+                            </div>
+                            <div class="video-info">
+                                <h4 class="video-name">WOW! Buster Plays With MAGIC! | GO Buster!| Bus Cartoons for Kids</h4>
+                                <span class="channal-name">Moonbug kids - Cartoons & Toys</span>
+                                <span class="views-upload">188K views - 1 year ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-box">
+                        <div class="image">
+                            <img src="images/video-image.png" alt="">
+                            <span class="unavilable">
+                                <i class="fa fa-light fa-eye-slash"></i>
+                                Playback Unavailable
+                            </span>
+                            <span class="watch-later">
+                                <span>WATCH LATER</span>
+                                <i class="fa fa-solid fa-clock"></i>
+                            </span>
+                            <span class="add-queue">
+                                <span>ADD TO QUEUE</span>
+                                <i class="fa fa-solid fa-bars-staggered"></i>
+                            </span>
+                            <span class="duration">45:26</span>
+                        </div>
+                        <div class="text">
+                            <div class="channal-image">
+                                <img src="images/notify2.jpg" alt="">
+                            </div>
+                            <div class="video-info">
+                                <h4 class="video-name">WOW! Buster Plays With MAGIC! | GO Buster!| Bus Cartoons for Kids</h4>
+                                <span class="channal-name">Moonbug kids - Cartoons & Toys</span>
+                                <span class="views-upload">188K views - 1 year ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-box">
+                        <div class="image">
+                            <img src="images/video-image.png" alt="">
+                            <span class="unavilable">
+                                <i class="fa fa-light fa-eye-slash"></i>
+                                Playback Unavailable
+                            </span>
+                            <span class="watch-later">
+                                <span>WATCH LATER</span>
+                                <i class="fa fa-solid fa-clock"></i>
+                            </span>
+                            <span class="add-queue">
+                                <span>ADD TO QUEUE</span>
+                                <i class="fa fa-solid fa-bars-staggered"></i>
+                            </span>
+                            <span class="duration">45:26</span>
+                        </div>
+                        <div class="text">
+                            <div class="channal-image">
+                                <img src="images/notify2.jpg" alt="">
+                            </div>
+                            <div class="video-info">
+                                <h4 class="video-name">WOW! Buster Plays With MAGIC! | GO Buster!| Bus Cartoons for Kids</h4>
+                                <span class="channal-name">Moonbug kids - Cartoons & Toys</span>
+                                <span class="views-upload">188K views - 1 year ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-box">
+                        <div class="image">
+                            <img src="images/video-image.png" alt="">
+                            <span class="unavilable">
+                                <i class="fa fa-light fa-eye-slash"></i>
+                                Playback Unavailable
+                            </span>
+                            <span class="watch-later">
+                                <span>WATCH LATER</span>
+                                <i class="fa fa-solid fa-clock"></i>
+                            </span>
+                            <span class="add-queue">
+                                <span>ADD TO QUEUE</span>
+                                <i class="fa fa-solid fa-bars-staggered"></i>
+                            </span>
+                            <span class="duration">45:26</span>
+                        </div>
+                        <div class="text">
+                            <div class="channal-image">
+                                <img src="images/notify2.jpg" alt="">
+                            </div>
+                            <div class="video-info">
+                                <h4 class="video-name">WOW! Buster Plays With MAGIC! | GO Buster!| Bus Cartoons for Kids</h4>
+                                <span class="channal-name">Moonbug kids - Cartoons & Toys</span>
+                                <span class="views-upload">188K views - 1 year ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-box">
+                        <div class="image">
+                            <img src="images/video-image.png" alt="">
+                            <span class="unavilable">
+                                <i class="fa fa-light fa-eye-slash"></i>
+                                Playback Unavailable
+                            </span>
+                            <span class="watch-later">
+                                <span>WATCH LATER</span>
+                                <i class="fa fa-solid fa-clock"></i>
+                            </span>
+                            <span class="add-queue">
+                                <span>ADD TO QUEUE</span>
+                                <i class="fa fa-solid fa-bars-staggered"></i>
+                            </span>
+                            <span class="duration">45:26</span>
+                        </div>
+                        <div class="text">
+                            <div class="channal-image">
+                                <img src="images/notify2.jpg" alt="">
+                            </div>
+                            <div class="video-info">
+                                <h4 class="video-name">WOW! Buster Plays With MAGIC! | GO Buster!| Bus Cartoons for Kids</h4>
+                                <span class="channal-name">Moonbug kids - Cartoons & Toys</span>
+                                <span class="views-upload">188K views - 1 year ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-box">
+                        <div class="image">
+                            <img src="images/video-image.png" alt="">
+                            <span class="unavilable">
+                                <i class="fa fa-light fa-eye-slash"></i>
+                                Playback Unavailable
+                            </span>
+                            <span class="watch-later">
+                                <span>WATCH LATER</span>
+                                <i class="fa fa-solid fa-clock"></i>
+                            </span>
+                            <span class="add-queue">
+                                <span>ADD TO QUEUE</span>
+                                <i class="fa fa-solid fa-bars-staggered"></i>
+                            </span>
+                            <span class="duration">45:26</span>
+                        </div>
+                        <div class="text">
+                            <div class="channal-image">
+                                <img src="images/notify2.jpg" alt="">
+                            </div>
+                            <div class="video-info">
+                                <h4 class="video-name">WOW! Buster Plays With MAGIC! | GO Buster!| Bus Cartoons for Kids</h4>
+                                <span class="channal-name">Moonbug kids - Cartoons & Toys</span>
+                                <span class="views-upload">188K views - 1 year ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-box">
+                        <div class="image">
+                            <img src="images/video-image.png" alt="">
+                            <span class="unavilable">
+                                <i class="fa fa-light fa-eye-slash"></i>
+                                Playback Unavailable
+                            </span>
+                            <span class="watch-later">
+                                <span>WATCH LATER</span>
+                                <i class="fa fa-solid fa-clock"></i>
+                            </span>
+                            <span class="add-queue">
+                                <span>ADD TO QUEUE</span>
+                                <i class="fa fa-solid fa-bars-staggered"></i>
+                            </span>
+                            <span class="duration">45:26</span>
+                        </div>
+                        <div class="text">
+                            <div class="channal-image">
+                                <img src="images/notify2.jpg" alt="">
+                            </div>
+                            <div class="video-info">
+                                <h4 class="video-name">WOW! Buster Plays With MAGIC! | GO Buster!| Bus Cartoons for Kids</h4>
+                                <span class="channal-name">Moonbug kids - Cartoons & Toys</span>
+                                <span class="views-upload">188K views - 1 year ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-box">
+                        <div class="image">
+                            <img src="images/video-image.png" alt="">
+                            <span class="unavilable">
+                                <i class="fa fa-light fa-eye-slash"></i>
+                                Playback Unavailable
+                            </span>
+                            <span class="watch-later">
+                                <span>WATCH LATER</span>
+                                <i class="fa fa-solid fa-clock"></i>
+                            </span>
+                            <span class="add-queue">
+                                <span>ADD TO QUEUE</span>
+                                <i class="fa fa-solid fa-bars-staggered"></i>
+                            </span>
+                            <span class="duration">45:26</span>
+                        </div>
+                        <div class="text">
+                            <div class="channal-image">
+                                <img src="images/notify2.jpg" alt="">
+                            </div>
+                            <div class="video-info">
+                                <h4 class="video-name">WOW! Buster Plays With MAGIC! | GO Buster!| Bus Cartoons for Kids</h4>
+                                <span class="channal-name">Moonbug kids - Cartoons & Toys</span>
+                                <span class="views-upload">188K views - 1 year ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-box">
+                        <div class="image">
+                            <img src="images/video-image.png" alt="">
+                            <span class="unavilable">
+                                <i class="fa fa-light fa-eye-slash"></i>
+                                Playback Unavailable
+                            </span>
+                            <span class="watch-later">
+                                <span>WATCH LATER</span>
+                                <i class="fa fa-solid fa-clock"></i>
+                            </span>
+                            <span class="add-queue">
+                                <span>ADD TO QUEUE</span>
+                                <i class="fa fa-solid fa-bars-staggered"></i>
+                            </span>
+                            <span class="duration">45:26</span>
+                        </div>
+                        <div class="text">
+                            <div class="channal-image">
+                                <img src="images/notify2.jpg" alt="">
+                            </div>
+                            <div class="video-info">
+                                <h4 class="video-name">WOW! Buster Plays With MAGIC! | GO Buster!| Bus Cartoons for Kids</h4>
+                                <span class="channal-name">Moonbug kids - Cartoons & Toys</span>
+                                <span class="views-upload">188K views - 1 year ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-box">
+                        <div class="image">
+                            <img src="images/video-image.png" alt="">
+                            <span class="unavilable">
+                                <i class="fa fa-light fa-eye-slash"></i>
+                                Playback Unavailable
+                            </span>
+                            <span class="watch-later">
+                                <span>WATCH LATER</span>
+                                <i class="fa fa-solid fa-clock"></i>
+                            </span>
+                            <span class="add-queue">
+                                <span>ADD TO QUEUE</span>
+                                <i class="fa fa-solid fa-bars-staggered"></i>
+                            </span>
+                            <span class="duration">45:26</span>
+                        </div>
+                        <div class="text">
+                            <div class="channal-image">
+                                <img src="images/notify2.jpg" alt="">
+                            </div>
+                            <div class="video-info">
+                                <h4 class="video-name">WOW! Buster Plays With MAGIC! | GO Buster!| Bus Cartoons for Kids</h4>
+                                <span class="channal-name">Moonbug kids - Cartoons & Toys</span>
+                                <span class="views-upload">188K views - 1 year ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-box">
+                        <div class="image">
+                            <img src="images/video-image.png" alt="">
+                            <span class="unavilable">
+                                <i class="fa fa-light fa-eye-slash"></i>
+                                Playback Unavailable
+                            </span>
+                            <span class="watch-later">
+                                <span>WATCH LATER</span>
+                                <i class="fa fa-solid fa-clock"></i>
+                            </span>
+                            <span class="add-queue">
+                                <span>ADD TO QUEUE</span>
+                                <i class="fa fa-solid fa-bars-staggered"></i>
+                            </span>
+                            <span class="duration">45:26</span>
+                        </div>
+                        <div class="text">
+                            <div class="channal-image">
+                                <img src="images/notify2.jpg" alt="">
+                            </div>
+                            <div class="video-info">
+                                <h4 class="video-name">WOW! Buster Plays With MAGIC! | GO Buster!| Bus Cartoons for Kids</h4>
+                                <span class="channal-name">Moonbug kids - Cartoons & Toys</span>
+                                <span class="views-upload">188K views - 1 year ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-box">
+                        <div class="image">
+                            <img src="images/video-image.png" alt="">
+                            <span class="unavilable">
+                                <i class="fa fa-light fa-eye-slash"></i>
+                                Playback Unavailable
+                            </span>
+                            <span class="watch-later">
+                                <span>WATCH LATER</span>
+                                <i class="fa fa-solid fa-clock"></i>
+                            </span>
+                            <span class="add-queue">
+                                <span>ADD TO QUEUE</span>
+                                <i class="fa fa-solid fa-bars-staggered"></i>
+                            </span>
+                            <span class="duration">45:26</span>
+                        </div>
+                        <div class="text">
+                            <div class="channal-image">
+                                <img src="images/notify2.jpg" alt="">
+                            </div>
+                            <div class="video-info">
+                                <h4 class="video-name">WOW! Buster Plays With MAGIC! | GO Buster!| Bus Cartoons for Kids</h4>
+                                <span class="channal-name">Moonbug kids - Cartoons & Toys</span>
+                                <span class="views-upload">188K views - 1 year ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End videos -->
+            </div>
+            <!-- End Right Content -->
+        </div>
+        <!-- End Page Body -->
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
